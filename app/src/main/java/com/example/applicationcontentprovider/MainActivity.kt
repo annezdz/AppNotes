@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor>{
             override fun noteClickedItem(cursor: Cursor) {
                 /*Pegamos o id do click do RV.
                 //Precisa do supportFragment Manager para poder trazer o dialog manager aqui, para que possamos
-                trabalhar com ele e esse supportfragmentmanager fica somente dentro da Activity, então é por isso
+                trabalhar com ele e esse supportfragmentmanager fica somente dCrentro da Activity, então é por isso
                 que criamos essa interface e estamos utilizando ela assim.
                 */
                 val id:Long = cursor?.getLong(cursor.getColumnIndex(_ID))
